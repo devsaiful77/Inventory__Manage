@@ -9,4 +9,8 @@ class DashboardController extends Controller{
     public function root(){
         return view('template.home');
     }
+
+    public function index(){
+        return view('template.dashboard');
+    }
 }
