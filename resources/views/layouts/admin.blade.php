@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="{{asset('contents/admin')}}/assets/css/style.css"/>
         <link rel="stylesheet" href="{{asset('contents/admin')}}/assets/css/custom.css"/>
         @yield('styles')
+        @livewireStyles
         <script src="{{asset('contents/admin')}}/assets/libs/jquery/jquery.min.js"></script>
     </head>
     <body data-sidebar="dark">
@@ -101,6 +102,7 @@
         <script src="{{asset('contents/admin')}}/assets/js/app.js"></script>
         <script src="{{asset('contents/admin')}}/assets/js/custom.js"></script>
         @yield('scripts')
+        @livewireScripts
     </body>
 </html>
 

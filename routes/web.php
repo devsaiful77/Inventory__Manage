@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\Finance\IncomeTypeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,6 +20,11 @@ Route::get('/', [DashboardController::class, 'root']);
 Route::group(['middleware' => 'auth' ], function () {
 
     Route::get('/dashboard',[DashboardController::class, 'index'])->name('dashboard');
+    /* ==================== Finance ==================== */
+    Route::prefix('finace')->group(function () {
+        Route::resource('income-type', IncomeTypeController::class);
+    });;
+    /* ==================== Finance ==================== */
 
 });
 

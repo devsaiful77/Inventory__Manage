@@ -10,6 +10,22 @@
                         {{-- ================== Approval ================== --}}
                     </ul>
                 </li>
+                {{-- finacial --}}
+                <li class="@yield('finance')"><a href="#" class="waves-effect"><i class="bx bx-package"></i><span>Finance & Accounting</span></a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        {{-- ================== Income ================== --}}
+                        <li><a class="@yield('income') " href="#"> <i class="fas fa-arrow-right sm child_i"></i> Income </a></li>
+                        {{-- ================== Expense ================== --}}
+                        <li><a class="@yield('expense') " href="#"> <i class="fas fa-arrow-right sm child_i"></i> Expense </a></li>
+                        {{-- ================== Income type ================== --}}
+                        <li><a class="@yield('income-type') " href="{{ route('income-type.index') }}"> <i class="fas fa-arrow-right sm child_i"></i> Income Type </a></li>
+                        {{-- ================== expense type ================== --}}
+                        <li><a class="@yield('expense-type') " href="#"> <i class="fas fa-arrow-right sm child_i"></i> Expense type </a></li>
+                        {{-- ================== summary ================== --}}
+                        <li><a class="@yield('summary') " href="#"> <i class="fas fa-arrow-right sm child_i"></i> Summary </a></li>
+
+                    </ul>
+                </li>
 
 
                 {{--
